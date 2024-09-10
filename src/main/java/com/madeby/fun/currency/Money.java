@@ -22,28 +22,28 @@ public class Money
         return new Franc(amount, currency);
     }
 
-    Money times( int multiplier ) {
-        return null;
-    };
+  public Money times( int multiplier )
+    {
+        return new Money(amount * multiplier, currency);
+    }
 
     public boolean equals( Object obj )
     {
-       boolean result = false;
+       boolean amountAndCurrencyEqual = false;
         try {
-            if ( obj == null)
+            if ( obj == null) {
                 throw new NullPointerException("Null Object obj");
-            else if ( this.getClass()!= obj.getClass() ) {
-                throw new IllegalArgumentException(String.format("Different classes passed this:%s obj:%s",
-                        this.getClass( ),
-                        obj.getClass()));
+            } else if ( obj.getClass() != this.getClass()) {
+                throw new IllegalArgumentException( "Class mismatch" );
             }
-            result = this.amount == ((Money) obj).amount;
+            Money money = (Money) obj;
+            amountAndCurrencyEqual = amount == money.amount && currency.equals(money.currency);
         } catch ( NullPointerException e ) {
             logger.error("NullPointerException {}", e.getMessage( ));
         } catch ( IllegalArgumentException e ) {
             logger.error("IllegalArgumentException {}",  e.getMessage());
         }
-        return result;
+        return amountAndCurrencyEqual;
 
     }
 

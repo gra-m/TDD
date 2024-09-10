@@ -13,42 +13,33 @@ class MoneyTest
        assertEquals("CHF", Money.franc(1, "CHF").currency());
     }
 
-    @org.junit.jupiter.api.Test
-    void TestDollarMultiplication( )
-    {
-        Money five = Money.dollar(5, "USD");
-
-        assertEquals(Money.dollar(10, "USD"), five.times(2));
-
-        assertEquals(Money.dollar(15, "USD"), five.times(3));
-    }
-
 @org.junit.jupiter.api.Test
-    void TestFrancMultiplication( )
+    void TestMultiplication( )
     {
-        Money five = Money.franc(5, "CHF");
+        Money fiveFranc = new  Money(5, "CHF");
+        Money fiveDollar = new  Money(5, "USD");
 
-        assertEquals(Money.franc(10, "CHF"), five.times(2));
-
-        assertEquals(Money.franc(15, "CHF"), five.times(3));
+        assertEquals(new Money(10, "CHF"), fiveFranc.times(2));
+        assertEquals(new Money(15, "USD"), fiveDollar.times(3));
     }
     @org.junit.jupiter.api.Test
     void testEquality() {
 
-        assertEquals(Money.dollar(5, "USD"), Money.dollar(5, "USD"));
-        assertEquals(Money.franc(5, "CHF"), Money.franc(5, "CHF"));
+        assertEquals(new Money(5, "USD"), new Money(5, "USD"));
+        assertEquals(new Money(5, "CHF"), new Money(5, "CHF"));
 
-        assertNotEquals(Money.dollar(5, "USD"), Money.dollar(6,"USD" ));
-        assertNotEquals(Money.franc(5, "CHF"), Money.franc(6, "CHF"));
+        assertNotEquals(new Money(5, "USD"), new Money(6,"USD" ));
+        assertNotEquals(new Money(5, "CHF"), new Money(6, "CHF"));
 
-        assertNotEquals(Money.dollar(5, "USD"), Money.franc(5, "CHF"));
-        assertNotEquals(Money.franc(5, "CHF"), Money.dollar(5, "USD"));
+        assertNotEquals(new Money(5, "USD"), new Money(5, "CHF"));
+        assertNotEquals(new Money(5, "CHF"), new Money(5, "USD"));
     }
 
 
     @org.junit.jupiter.api.Test
     void testDifferentClassEquality() {
-        assertEquals(new Money(10, "CHF"), new Franc(10, "CHF"));
+        assertEquals(new Money(10, "CHF"), new Money(10, "CHF"));
+        assertNotEquals(new Money(10, "CHF"), new Money(10, "USD"));
     }
 
 
