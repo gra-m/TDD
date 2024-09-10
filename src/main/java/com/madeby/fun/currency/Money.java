@@ -12,6 +12,10 @@ public abstract class Money
         return new Dollar(amount);
     }
 
+    public static Money franc( int amount ) {
+        return new Franc(amount);
+    }
+
     abstract Money times( int multiplier );
 
     public boolean equals( Object obj )
