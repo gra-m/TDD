@@ -1,0 +1,10 @@
+2024-09-10 15:30:14 [main] INFO  com.madeby.fun.Main - i value = 1
+2024-09-10 15:30:14 [main] INFO  com.madeby.fun.Main - i value = 2
+2024-09-10 15:30:14 [main] INFO  com.madeby.fun.Main - i value = 3
+2024-09-10 15:30:14 [main] INFO  com.madeby.fun.Main - i value = 4
+2024-09-10 15:30:14 [main] INFO  com.madeby.fun.Main - i value = 5
+2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 1
+2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 2
+2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 3
+2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 4
+2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 5

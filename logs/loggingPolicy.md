@@ -28,7 +28,7 @@ Logs are stored on the local file system under `logs/` directory.
 - Error logs: `logs/error.log`
 
 ## Log Rotation and Retention
-- **Rolling Policy**: Logs are rolled daily and when the log file exceeds 10MB.
+- **Rolling Policy**: Logs are rolled daily and when the log file exceeds 1MB.
 - **Retention Policy**: Up to 3000 days of logs are retained so the examples will remain
 - **Total Size Cap**: 30MB max with a max file size of 1MB
 
