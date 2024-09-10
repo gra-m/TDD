@@ -7,6 +7,30 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 class MoneyTest
 {
     @org.junit.jupiter.api.Test
+    void testReduceSum() {
+        Expression sum = new Sum(Money.dollar(3), Money.dollar(4));
+        Bank bank = new Bank();
+
+        Money result = bank.reduce(sum, "USD");
+        
+        assertEquals(Money.dollar(7), result);
+
+
+    }
+
+    @org.junit.jupiter.api.Test
+    void testPlusReturnSum() {
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+
+        Sum sum = (Sum) result;
+
+        assertEquals(five, sum.augend);
+        assertEquals(five, sum.addend);
+
+    }
+
+    @org.junit.jupiter.api.Test
     void testSimpleAddition() {
         Money five = Money.dollar(5);
 
