@@ -9,8 +9,8 @@ class MoneyTest
     @org.junit.jupiter.api.Test
     void TestCurrency( )
     {
-       assertEquals("USD", Money.dollar(1, "USD").currency());
-       assertEquals("CHF", Money.franc(1, "CHF").currency());
+       assertEquals("USD", Money.dollar(1).currency());
+       assertEquals("CHF", Money.franc(1).currency());
     }
 
 @org.junit.jupiter.api.Test
@@ -38,10 +38,9 @@ class MoneyTest
 
     @org.junit.jupiter.api.Test
     void testDifferentClassEquality() {
-        assertEquals(new Money(10, "CHF"), new Money(10, "CHF"));
-        assertNotEquals(new Money(10, "CHF"), new Money(10, "USD"));
+        assertEquals(new Money(10, "CHF"), Money.franc(10));
+        assertEquals(new Money(15, "USD"), Money.dollar(15));
+        assertNotEquals(new Money(10, "CHF"), Money.dollar(10));
     }
-
-
 
 }

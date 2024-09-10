@@ -14,12 +14,12 @@ public class Money
         this.currency = currency;
     }
 
-    public static Money dollar( int amount, String currency ) {
-        return new Dollar(amount, currency);
+    public static Money dollar( int amount) {
+        return new Money(amount, "USD");
     }
 
-    public static Money franc( int amount, String currency ) {
-        return new Franc(amount, currency);
+    public static Money franc( int amount) {
+        return new Money(amount, "CHF");
     }
 
   public Money times( int multiplier )
@@ -49,6 +49,11 @@ public class Money
 
     public String currency( ) {
         return currency;
+    }
+
+    public int getAmount( )
+    {
+        return amount;
     }
 
     public String toString( ) {
