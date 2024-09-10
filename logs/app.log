@@ -8,3 +8,11 @@
 2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 3
 2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 4
 2024-09-10 15:59:03 [main] INFO  com.madeby.fun.Main - i value = 5
+2024-09-10 19:43:19 [main] ERROR com.madeby.fun.currency.Money - null
+2024-09-10 19:43:19 [main] ERROR com.madeby.fun.currency.Money - null
+2024-09-10 19:52:39 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException null
+2024-09-10 19:52:39 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException null
+2024-09-10 19:56:47 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Dollar obj:class com.madeby.fun.currency.Franc
+2024-09-10 19:56:47 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
+2024-09-10 20:07:33 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Dollar obj:class com.madeby.fun.currency.Franc
+2024-09-10 20:07:33 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
