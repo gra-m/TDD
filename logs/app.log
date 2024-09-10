@@ -16,3 +16,19 @@
 2024-09-10 19:56:47 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
 2024-09-10 20:07:33 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Dollar obj:class com.madeby.fun.currency.Franc
 2024-09-10 20:07:33 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
+2024-09-10 20:17:25 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Dollar obj:class com.madeby.fun.currency.Franc
+2024-09-10 20:17:25 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
+2024-09-10 21:09:38 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Dollar obj:class com.madeby.fun.currency.Franc
+2024-09-10 21:09:38 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
+2024-09-10 21:12:49 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Dollar obj:class com.madeby.fun.currency.Franc
+2024-09-10 21:12:49 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Franc obj:class com.madeby.fun.currency.Dollar
+2024-09-10 21:35:56 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Money obj:class com.madeby.fun.currency.Franc
+2024-09-10 21:37:01 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Different classes passed this:class com.madeby.fun.currency.Money obj:class com.madeby.fun.currency.Franc
+2024-09-10 21:59:47 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:08:29 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:08:29 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:08:29 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:09:37 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:09:37 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:13:53 [main] ERROR com.madeby.fun.currency.Money - IllegalArgumentException Class mismatch
+2024-09-10 22:57:03 [main] ERROR com.madeby.fun.currency.Money - NullPointerException Null Object obj
