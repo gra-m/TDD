@@ -24,23 +24,18 @@ class MoneyTest
     }
     @org.junit.jupiter.api.Test
     void testEquality() {
+        assertEquals(new Money(10, "CHF"), Money.franc(10));
+        assertEquals(new Money(15, "USD"), Money.dollar(15));
 
-        assertEquals(new Money(5, "USD"), new Money(5, "USD"));
-        assertEquals(new Money(5, "CHF"), new Money(5, "CHF"));
-
-        assertNotEquals(new Money(5, "USD"), new Money(6,"USD" ));
-        assertNotEquals(new Money(5, "CHF"), new Money(6, "CHF"));
-
-        assertNotEquals(new Money(5, "USD"), new Money(5, "CHF"));
-        assertNotEquals(new Money(5, "CHF"), new Money(5, "USD"));
     }
 
 
     @org.junit.jupiter.api.Test
-    void testDifferentClassEquality() {
-        assertEquals(new Money(10, "CHF"), Money.franc(10));
-        assertEquals(new Money(15, "USD"), Money.dollar(15));
+    void testInequality( )
+    {
+        assertNotEquals(new Money(5, "CHF"), new Money(6, "CHF"));
         assertNotEquals(new Money(10, "CHF"), Money.dollar(10));
+        assertNotEquals(new Money(10, "USD"), Money.franc(10));
     }
 
 }
