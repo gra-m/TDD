@@ -2,14 +2,14 @@ package com.madeby.fun.currency;
 
 public class Franc extends Money
 {
-    public Franc( int amount )
+    public Franc( int amount, String currency )
     {
-        this.amount = amount;
+        super(amount, currency);
     }
 
-    public Franc times( int multiplier )
+    public Money times( int multiplier )
     {
-        return new Franc(amount * multiplier);
+        return  Money.franc(amount * multiplier);
     }
 
     int getAmount( )

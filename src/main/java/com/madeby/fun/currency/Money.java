@@ -7,13 +7,19 @@ public abstract class Money
 {
     private static final Logger logger = LoggerFactory.getLogger(Money.class);
     protected int amount;
+    protected String currency;
+
+    protected Money( int amount, String currency ) {
+        this.amount = amount;
+        this.currency = currency;
+    }
 
     public static Money dollar( int amount ) {
-        return new Dollar(amount);
+        return new Dollar(amount, "USD");
     }
 
     public static Money franc( int amount ) {
-        return new Franc(amount);
+        return new Franc(amount, "CHF");
     }
 
     abstract Money times( int multiplier );
@@ -37,5 +43,9 @@ public abstract class Money
         }
         return result;
 
+    }
+
+    public String currency( ) {
+        return currency;
     }
 }

@@ -5,6 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class MoneyTest
 {
+
+    @org.junit.jupiter.api.Test
+    void TestCurrency( )
+    {
+       assertEquals("USD", Money.dollar(1).currency());
+       assertEquals("CHF", Money.franc(1).currency());
+    }
+
     @org.junit.jupiter.api.Test
     void TestDollarMultiplication( )
     {
