@@ -3,7 +3,7 @@ package com.madeby.fun.currency;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public abstract class Money
+public class Money
 {
     private static final Logger logger = LoggerFactory.getLogger(Money.class);
     protected int amount;
@@ -14,15 +14,17 @@ public abstract class Money
         this.currency = currency;
     }
 
-    public static Money dollar( int amount ) {
-        return new Dollar(amount, "USD");
+    public static Money dollar( int amount, String currency ) {
+        return new Dollar(amount, currency);
     }
 
-    public static Money franc( int amount ) {
-        return new Franc(amount, "CHF");
+    public static Money franc( int amount, String currency ) {
+        return new Franc(amount, currency);
     }
 
-    abstract Money times( int multiplier );
+    Money times( int multiplier ) {
+        return null;
+    };
 
     public boolean equals( Object obj )
     {
@@ -47,5 +49,9 @@ public abstract class Money
 
     public String currency( ) {
         return currency;
+    }
+
+    public String toString( ) {
+        return amount + " " + currency;
     }
 }
