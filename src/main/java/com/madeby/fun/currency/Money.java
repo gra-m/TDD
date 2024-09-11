@@ -29,7 +29,14 @@ public class Money implements Expression
     {
         return new Money(amount * multiplier, currency);
     }
-
+    public Money reduce(String to) {
+        if (!to.equals(this.currency)) {
+            throw new UnsupportedOperationException("Included for use of string to, but somehow the currency value " +
+                    "has changed between instantiation and calling reduce.");
+        }
+        return this;
+    }
+    
     public boolean equals( Object obj )
     {
         boolean amountAndCurrencyEqual = false;
